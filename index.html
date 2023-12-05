@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: antiquewhite;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #info-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-around;
+      align-items: stretch;
+    }
+
+    div#info-container > input[type="text"] {
+      background-color: burlywood;
+      width: 300px;
+      height: 40px;
+      color: white;
+      border-radius: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    button {
+      height: 50px;
+      background-color: brown;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+    <div id="info-container">
+      <input type="text" name="" id="nomeAnimale" placeholder="Inserisci il nome del tuo animale domestico" />
+      <br />
+      <input type="text" name="" id="nomeProprietario" placeholder="Inserisci il tuo nome" />
+      <br />
+      <input type="text" name="" id="specieAnimale" placeholder="Inserisci la specie del tuo animale" />
+      <br />
+      <input type="text" id="razzaAnimale" placeholder="Inserisci razza del tuo animale" />
+      <br />
+      <button type="button" id="aggiungi">AGGIUNGI</button>
+    </div>
+    <div>
+      <ul id="listaAnimali"></ul>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
